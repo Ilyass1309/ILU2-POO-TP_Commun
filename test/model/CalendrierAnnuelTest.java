@@ -10,17 +10,21 @@ class CalendrierAnnuelTest {
 	
 	@BeforeAll
 	static void setUpBeforeClass() {
+		System.out.println("setUp");
 		calendrier = new CalendrierAnnuel();
 	}
 
 	@Test
 	void testCalendrierAnnuel() {
+		System.out.println("test1");
 		assertNotNull(calendrier, "calendrier null");
+		System.out.println("test1");
 	}
 
 	@Test
 	void testEstLibre() {
 		assertTrue(calendrier.estLibre(31,12), "31/12 devrait être libre");
+		System.out.println("test2");
 	}
 
 	@Test
