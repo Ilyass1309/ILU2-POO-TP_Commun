@@ -18,6 +18,4 @@ public class FormulaireRestaurant extends Formulaire{
 		return numService;
 	}
 	
-	
-	
 }
